@@ -1,0 +1,36 @@
+:root {
+  /* color */
+  --white-color: #fff;
+  --orange-color: #FD9F28;
+  --red-color: #ED1C24;
+  --brown-color: #3C2415;
+
+  /* space */
+  --medium-space: 0.750em; /* 12px */
+  --large-space: 1.250em; /* 20px */
+
+  /* font size */
+  --font-regular: 1.125rem; /* 18px */
+  --font-medium: 1.25rem; /* 20px */
+  --font-large: 2rem; /* 32px */
+  --font-big: 3.125rem; /* 50px */
+  --font-title: 5.25rem; /* 84px */
+}
+
+html,
+body {
+  cursor: url('../images/cursor.png') 10 10, auto;
+  user-select: none;
+}
+
+a:hover,
+button:hover {
+  cursor: url('../images/cursor_on.png') 10 10, auto !important;
+}
+
+@font-face {
+  font-family: 'computer';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_11-01@1.0/Ycomputer-Regular.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
