@@ -1,95 +1,117 @@
-*{
-    font-family: 'computer';
+* {
+  font-family: "computer";
 }
-body{
-    background: url('../images/background.jpg');
-    background-size: cover;
-    width: 100vw;
-    height: 100vh;
-    overflow: hidden;
+body {
+  background: url("../images/background.jpg");
+  background-size: cover;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
 }
-.wrap{    
-    width: 100vw;
-    height: 100vh;    
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;   
-    text-align: center;
-    animation: switch 1s linear; 
+.wrap {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  animation: switch 1s linear;
 }
 @keyframes switch {
-    0% { opacity: 0; transform:scale(3)}
-    100% { opacity: 1; transform:scale(1)}
+  0% {
+    opacity: 0;
+    transform: scale(3);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
 }
-.wrap h1{    
-    font-size: var(--font-title);
+.wrap h1 {
+  font-size: var(--font-title);
 }
-.wrap p{
-    font-size: var(--font-large);
-    margin-top: var(--medium-space);
-    margin-bottom: var(--medium-space);
+.wrap p.current {
+  font-size: var(--font-large);
+  margin-top: var(--medium-space);
+  margin-bottom: var(--medium-space);
 }
-.wrap p span{
-    position:relative;
-    z-index: 1;
+.wrap p.current span {
+  position: relative;
+  z-index: 1;
 }
-.wrap p span::after{
-    content: '';
-    display: block;
-    position: absolute;
-    width: 100%;
-    height: 8px;
-    background: var(--orange-color);
-    right: 0;
-    bottom: 0;
-    opacity: 0.5;
-    z-index: -1;
+.wrap p.current span::after {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 8px;
+  background: var(--orange-color);
+  right: 0;
+  bottom: 0;
+  opacity: 0.5;
+  z-index: -1;
 }
-.word-box{
-    font-size: 0;
-    margin-bottom: var(--medium-space);
-    display: flex;
+.wrap p.message {
+  margin-top: var(--large-space);
 }
-.word-box input{
-    width: 300px;
-    height: 50px;
-    padding: var(--medium-space);
-    box-sizing: border-box;
-    font-size: var(--font-medium);
-    text-align: center;    
+.wrap p.message.error {
+  color: var(--red-color);
+}
+.word_box{
+    margin-bottom: var(--large-space);
+}
+.word_input {
+  font-size: 0;
+  margin-bottom: var(--medium-space);
+  display: flex;
+  justify-content: center;
+}
+.word_input input {
+  width: 300px;
+  height: 50px;
+  padding: var(--medium-space);
+  box-sizing: border-box;
+  font-size: var(--font-medium);
+  text-align: center;
+  border: none;
+}
+.word_input .send_btn {
+  border: none;
+  color: var(--white-color);
+  width: 50px;
+  height: 50px;
+  font-size: var(--font-regular);
+  background: var(--brown-color) url("../images/next.png") center no-repeat;
+  background-size: 20px;
+  box-sizing: border-box;
+}
+.reset_btn{
     border: none;
-}
-.word-box .send_btn{
-    border: none;
+    font-size: var(--font-small);
     color: var(--white-color);
-    width: 50px;
-    height: 50px;
-    font-size: var(--font-regular);
-    background: var(--brown-color) url('../images/next.png') center no-repeat;
-    background-size: 20px ;
-    box-sizing: border-box;
+    padding: var(--medium-space);
+    background-color: #4b5a29;
 }
-.word-box .send_btn.error{
-    background-color: var(--red-color);
-}
-
 
 /* media */
 @media screen and (max-width: 550px) {
-    .wrap{
-        padding: var(--large-space);
-        box-sizing: border-box;
-    }
-    .wrap h1{
-        font-size: var(--font-big);
-    }
-    .wrap p{
-        font-size: var(--font-medium);
-        margin-top: var(--large-space);
-    }
-    .word-box input{
-        width: 200px;
-        font-size: var(--font-regular);
-    }
+  .wrap {
+    padding: var(--large-space);
+    box-sizing: border-box;
+  }
+  .wrap h1 {
+    font-size: var(--font-big);
+  }
+  .wrap p.current {
+    font-size: var(--font-medium);
+    margin-top: var(--large-space);
+  }
+  .word_input input {
+    width: 200px;
+    font-size: var(--font-regular);
+  }
+  .wrap p.message {
+    font-size: var(--font-small);
+  }
 }

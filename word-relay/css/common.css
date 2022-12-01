@@ -10,6 +10,7 @@
   --large-space: 1.250em; /* 20px */
 
   /* font size */
+  --font-small: 0.875rem; /* 14px */
   --font-regular: 1.125rem; /* 18px */
   --font-medium: 1.25rem; /* 20px */
   --font-large: 2rem; /* 32px */

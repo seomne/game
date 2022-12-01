@@ -9,17 +9,27 @@
     <link rel="stylesheet" href="css/reset.css" />
     <link rel="stylesheet" href="css/common.css" />
     <link rel="stylesheet" href="css/style.css" />
-    <!-- js -->
-    <script src="js/main.js"></script>
   </head>
   <body>
     <div class="wrap">
       <h1>끝말잇기 게임</h1>
-      <p>현재 단어 : <span>자바스크립트</span></p>
-      <div class="word-box">
-        <input type="text" class="text" placeholder="단어를 입력하세요." />
-        <button class="send_btn"></button>
+      <p class="current">현재 단어 : <span id="word"></span></p>
+      <div class="word_box">
+        <div class="word_input">
+          <input
+            type="text"
+            class="text"
+            placeholder="단어를 입력하세요."
+            onkeyup="if(window.event.keyCode==13){onClickButton()}"
+          />
+          <button type="button" class="send_btn"></button>
+        </div>
+        <p class="message" id="message"></p>
       </div>
+      <button type="button" class="reset_btn" onClick="window.location.href=window.location.href">샑 다시하기</button>
     </div>
+
+    <!-- js -->
+    <script src="js/main.js"></script>
   </body>
 </html>
