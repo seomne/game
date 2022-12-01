@@ -1,0 +1,40 @@
+body{
+    background-color: var(--black-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.calculator form{
+    display: grid;
+    grid-template-columns: repeat(4, 65px);
+    grid-auto-rows: 65px;
+}
+.calculator form button, .calculator form input{
+    border: 1px solid var(--black-color);
+    box-sizing: border-box;
+    font-size: 19px;
+}
+.calculator form button{
+    background-color: var(--gray-color);
+    
+}
+.calculator form button:hover{
+    opacity: 0.9;
+}
+.calculator form button.operator{
+    background-color: var(--orange-color);
+    color: var(--white-color);
+}
+.calculator form input[type="text"]{
+    grid-column: span 4;
+    text-align: right;
+    padding: 0 15px;
+    box-sizing: border-box;
+}
+.calculator form button.clear{
+    grid-column: span 3;
+}
+.calculator form button.zero{
+    grid-column: span 2;
+}

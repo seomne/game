@@ -6,30 +6,35 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Calculator</title>
     <!-- css -->
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/common.css">
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
     <div class="calculator">
       <form name="forms">
-        <input type="text" name="output" />
-        <input type="button" class="clear" value="C" />
-        <input type="button" class="operator" value="/" />
-        <input type="button" value="1" />
-        <input type="button" value="2" />
-        <input type="button" value="3" />
-        <input type="button" class="operator" value="*" />
-        <input type="button" value="4" />
-        <input type="button" value="5" />
-        <input type="button" value="6" />
-        <input type="button" class="operator" value="+" />
-        <input type="button" value="7" />
-        <input type="button" value="8" />
-        <input type="button" value="9" />
-        <input type="button" class="operator" value="-" />
-        <input type="button" class="dot" value="." />
-        <input type="button" class="result" value="0" />
-        <input type="button" class="operator" value="=" />
+        <input type="text" name="output" readonly />
+        <button type="button" data-type="clear" class="clear" value="AC">AC</button>
+        <button type="button" data-type="operator" class="operator" value="/">/</button>
+        <button type="button" value="1">1</button>
+        <button type="button" value="2">2</button>
+        <button type="button" value="3">3</button>
+        <button type="button" data-type="operator" class="operator" value="*">*</button>
+        <button type="button" value="4">4</button>
+        <button type="button" value="5">5</button>
+        <button type="button" value="6">6</button>
+        <button type="button" data-type="operator" class="operator" value="+">+</button>
+        <button type="button" value="7">7</button>
+        <button type="button" value="8">8</button>
+        <button type="button" value="9">9</button>
+        <button type="button" data-type="operator" class="operator" value="-">-</button>
+        <button type="button" class="zero" value="0">0</button>
+        <button type="button" class="dot" value=".">.</button>
+        <button type="button" data-type="result" class="operator result" value="=">=</button>
       </form>
     </div>
+
+    <!-- js -->
+    <script src="js/main.js"></script>
   </body>
 </html>

@@ -1,0 +1,14 @@
+:root {
+  /* color */
+  --white-color: #fff;
+  --black-color: #202020;
+  --orange-color: #F78E12;
+  --gray-color: #CBCCCF;
+}
+
+@font-face {
+  font-family: 'neo';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_11-01@1.0/NanumSquareNeo-Variable.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
