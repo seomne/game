@@ -76,7 +76,7 @@ function renderBlocks(moveType = "") {
     });
     movingItem.left = left;
     movingItem.top = top;
-    movingItem.direciton = direction;
+    movingItem.direction = direction;
 };
 
 function seizeBlock() {
@@ -137,8 +137,8 @@ function moveBlock(moveType, amount) {
 }
 
 function chageDirection() {
-    const direction = tempMoveingItem.direciton;
-    direction === 3 ? tempMoveingItem.direciton = 0 : tempMoveingItem.direciton += 1;
+    const direction = tempMoveingItem.direction;
+    direction === 3 ? tempMoveingItem.direction = 0 : tempMoveingItem.direction += 1;
     renderBlocks();
 }
 

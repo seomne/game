@@ -45,8 +45,3 @@ button {
 input:focus{
     outline: none;
 }
-
-* {
-    font-family: 'neo', sans-serif;
-    letter-spacing: -0.5px;
-}

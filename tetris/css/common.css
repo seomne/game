@@ -2,25 +2,26 @@
   /* color */
   --white-color: #fff;
   --black-color: #202020;
-  --orange-color: #F78E12;
-  --gray-color: #CBCCCF;
+  --orange-color: #ff6f00;
 
   /* space */
-  --medium-space: 0.750em; /* 12px */
-  --large-space: 1.250em; /* 20px */
+  --medium-space: 0.375em; /* 6px */
+  --large-space: 0.750em; /* 12px */
 
   /* font size */
-  --font-small: 0.875rem; /* 14px */
-  --font-regular: 1.125rem; /* 18px */
   --font-medium: 1.25rem; /* 20px */
   --font-large: 2rem; /* 32px */
   --font-big: 3.125rem; /* 50px */
-  --font-title: 5.25rem; /* 84px */
 }
 
 @font-face {
-  font-family: 'neo';
-  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_11-01@1.0/NanumSquareNeo-Variable.woff2') format('woff2');
+  font-family: 'Tenada';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2210-2@1.0/Tenada.woff2') format('woff2');
   font-weight: normal;
   font-style: normal;
+}
+
+* {
+  font-family: 'Tenada', sans-serif;
+  letter-spacing: -0.5px;
 }
