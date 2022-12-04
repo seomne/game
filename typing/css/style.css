@@ -1,0 +1,36 @@
+.wrap{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.word_display{
+    font-size: var(--font-big);
+    margin: var(--large-space);
+}
+.word_input_box input{
+    padding: var(--medium-space);
+    box-sizing: border-box;
+    font-size: var(--font-regular);
+    text-align: center;
+}
+.game_info{
+    display: flex;
+    justify-content: space-between;
+    width: 250px;
+    margin:calc(var(--large-space) * 1.5);
+}
+.time, .score{
+    font-size: var(--font-medium);
+    font-weight: 600;
+}
+button{
+    width: 200px;
+    height: 35px;
+    background-color: var(--orange-color);
+    color: var(--white-color);
+}
+.loading{
+    background-color: var(--gray-color);
+    cursor: not-allowed;
+}
